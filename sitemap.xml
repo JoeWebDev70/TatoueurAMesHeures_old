@@ -1,31 +1,29 @@
-<!-- site map realised for test hosting on planethoster -->
-
-        <!-- ! A MODIFIER : URL -->
-<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!-- site map realised for test hosting on vercel --> 
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 	<url>
-	  <loc>https://TatoueurAMesHeures/</loc>
+	  <loc>https://tatoueur-a-mes-heures-old.vercel.app/</loc>
 	  <lastmod>2023-04-12</lastmod>
 	  <priority>1.00</priority>
 	</url>
 	<url>
-	  <loc>https://TatoueurAMesHeures/index.html</loc>
+	  <loc>https://tatoueur-a-mes-heures-old.vercel.app/index.html</loc>
 	  <lastmod>2023-04-12</lastmod>
 	  <priority>0.80</priority>
 	</url>
 	<url>
-	  <loc>https://TatoueurAMesHeures/galerie.html</loc>
+	  <loc>https://tatoueur-a-mes-heures-old.vercel.app/galerie.html</loc>
 	  <lastmod>2023-04-12</lastmod>
 	  <priority>0.80</priority>
 	</url>
 	<url>
-	  <loc>https://TatoueurAMesHeures/contact.html</loc>
+	  <loc>https://tatoueur-a-mes-heures-old.vercel.app/contact.html</loc>
 	  <lastmod>2023-04-12</lastmod>
 	  <priority>0.80</priority>
 	</url>
 	<url>
-	  <loc>https://TatoueurAMesHeures/mentions_legales.html</loc>
+	  <loc>https://tatoueur-a-mes-heures-old.vercel.app/mentions_legales.html</loc>
 	  <lastmod>2023-04-12</lastmod>
 	  <priority>0.80</priority>
 	</url>
-</urlset> -->
+</urlset>
