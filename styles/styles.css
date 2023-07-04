@@ -1,0 +1,262 @@
+/*
+ {} 
+font-family: 'Permanent Marker', cursive; ENTREPRISE + CTA
+font-family: 'Montserrat', sans-serif; TITRES
+font-family: 'Manrope', sans-serif; BODY
+*/
+
+/*common for all the site*/
+*{ /*initialization of internal and external margins*/
+    margin: 0;
+    padding: 0px;
+} 
+
+body{ /*background color and setting for text if not specifiyed*/
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    color:#F9F8FF;
+    background: black;
+} 
+
+main{ /*to force the footer to stay at the bottom when the page is too long*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+} 
+
+header, 
+footer{ /*background color and internal margins for header and footer*/
+    background-color: white;
+    padding: 20px 50px; /*first: top and bottom - second : left and right*/    
+}
+
+nav,
+footer { /*position of content of header and footer*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+nav img { /*custom of size and internal margins for the Logo*/
+    width: auto;
+    height: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+
+nav .pageActuelle{ /*current page underline*/
+    border-bottom: solid;
+    border-bottom-color: #D40202;
+}
+
+nav a,
+footer a{ /*mise en forme marges externes et text header et footer*/
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+footer p,
+footer .nomEntreprise{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.lienReseauxSociaux img{ /*resizing of social network logos in the footer*/
+    width: auto;
+    height: 30px;
+} 
+
+section{ /*internal margins of sections*/
+    padding: 80px;
+}
+
+h1, 
+h2, 
+h3{ /*Font for titles*/
+    font-family: 'Montserrat', sans-serif;
+} 
+
+h1{ /*size and alignment Primary title*/
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 50px;
+} 
+
+h2{ /*size and alignment secondary titles*/
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h3 { /*size and alignment third title*/
+    font-size: 1.2em;
+    text-decoration: underline;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+p{ /*size and alignment paragraphs*/
+    font-size: 1.1em;
+}
+
+a { /*Font and color of links*/
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #F9F8FF;
+} 
+
+.lienIco:hover,
+a:hover{ /*Link and ico when hover*/
+    opacity: 0.5;
+}
+
+.cta { /*Buttons (cta = call to action) : txt, color internal and external margins*/
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3em;
+    display: inline-block;
+    background: linear-gradient(#3877C9, #2A5A97, #2F445C);
+    border-radius: 10px;
+    padding: 15px 80px;   
+    margin: 30px;
+    text-align: center;
+}
+
+.cta:hover{ /*Cta hover*/
+    opacity: 0.8;
+}
+
+.nomEntreprise { /* special font*/ 
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+} 
+
+.imgTatoueurAMesHeures {/*special section color and image position*/
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credit{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+.credit_white{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+.imgTatoueurAMesHeures img{/* section image size*/
+    width: 30%;
+    height: auto;
+}
+
+.motAccentue { /*Some word not important for SEO but for readibility*/
+    font-weight: 900;
+    color: white;
+} 
+
+
+@media screen and (max-width: 992px ) {
+    header,
+    footer { 
+        padding: 20px 20px;
+    }
+
+    nav a,
+    footer a{ 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ 
+    section{ 
+        padding: 40px;
+    }
+    
+    nav img { 
+        width: auto;
+        height: 20px;
+    }
+
+    h1{ 
+        font-size: 1.3em;
+    }
+
+    h2{ 
+        font-size: 1.1em;
+    }
+
+    h3{ 
+        font-size: 1em;
+    }
+
+    a,
+    p{ 
+        font-size: 0.9em;
+    }
+
+    .cta{ 
+        padding: 15px 60px;   
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav,
+    footer{ 
+        flex-direction: column;
+    }
+ 
+   .lienReseauxSociaux img{
+        width: auto;
+        height: 25px;
+        padding-top: 10px;
+    }
+
+    .nomEntreprise { /*police speciale*/ 
+        font-size: 1.1em;
+    } 
+}
+
+@media screen and (max-width: 576px) {
+    
+    h1{ 
+        font-size: 1em;
+    }
+
+    h2{ 
+        font-size: 0.9em;
+    }
+
+    h3{ 
+        font-size: 0.8em;
+    }
+
+    a,
+    p{ 
+        font-size: 0.7em;
+    }
+
+    .nomEntreprise { /*police speciale*/ 
+        font-size: 0.9em;
+    } 
+
+    .cta{ 
+        padding: 10px 40px;   
+        font-size: 0.9em;
+    }
+
+    .imgTatoueurAMesHeures img{/*taille image*/
+        width: 60%;
+    }
+}
+

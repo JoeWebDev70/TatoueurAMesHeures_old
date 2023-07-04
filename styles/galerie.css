@@ -1,0 +1,114 @@
+
+h1{ /*internal margins of First Title*/
+    padding-top: 80px;
+}
+
+.retourHautPage { /*page alignment of back to top*/
+    text-align: center;
+} 
+
+.invitationReseaux { /*alignment of invitation on social network section*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitationReseaux img{ /*place and size of invitation on social network section's logos */
+    width: auto;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.arms,
+.legs,
+.back{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    gap: 15px;
+}
+
+.faces{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+    gap: 15px;
+}
+
+.drawing,
+.chest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 15px;
+}
+
+.arms img,
+.legs img,
+.faces img,
+.drawing img,
+.back img,
+.chest img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px ) {
+    .arms,
+    .legs,
+    .back{
+        grid-template-columns: 1fr 1fr;   
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    }
+
+    .faces{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+    }
+
+    .drawing,
+    .chest{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+
+    .invitationReseaux img{ 
+        width: auto;
+        height: 50px;
+    } 
+
+    .credit_white{
+        font-size: 0.7em;
+    }
+}
+
+
+@media (max-width: 576px ) {
+    .arms,
+    .legs,
+    .back{
+        grid-template-columns: 1fr;   
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    }
+
+    .faces{
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+
+    .drawing,
+    .chest{
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    }
+
+    .invitationReseaux img{ 
+        width: auto;
+        height: 30px;
+    } 
+}

@@ -1,0 +1,37 @@
+
+.mentionsLegales{ /*internal margins changed for this page*/
+    text-align: justify;
+    padding: 80px 50px;
+}
+
+.mentionsLegales p{ /*font size reduced for this page*/
+    font-size: 1em;
+}
+
+.mentionsLegales a{ /*linking evidence*/
+    font-style: italic;
+}
+
+.presentation,
+.lexique,
+.conditions,
+.services,
+.limitationResponsabilite,
+.proprieteIntellectuelle,
+.rgpd,
+.liensEtCookies,
+.lois,
+.droit{ /*modification of section's internal margins to reduce the length of the page*/
+    padding: 25px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .mentionsLegales p{ 
+        font-size: 0.7em;
+    }
+
+    .mentionsLegales{ 
+        padding: 80px 30px;
+    }
+}
+

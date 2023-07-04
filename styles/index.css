@@ -1,0 +1,24 @@
+
+.presentation { /*alignment and margins of presentation section*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; 
+}
+
+.presentation p { /*height between lines of presentation section*/
+    line-height: 200%;
+}
+
+.lienGalerie{ /*alignment and margins of Call to visiting Gallery section*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; 
+}
+
+.lienGalerie p { /*height between lines of Call to visiting Gallery section*/
+    line-height: 400%;
+} 
